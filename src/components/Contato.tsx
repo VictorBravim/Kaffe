@@ -21,14 +21,14 @@ const Contato: React.FC = () => {
     };
 
     return (
-        <div id='contato' className="mx-12 py-8">
+        <div id='contato' className="mx-8 lg:mx-12 py-8">
             <h2 className="text-white text-3xl font-bold mb-8">Contato</h2>
-            <div className='w-full flex flex-row justify-between gap-6'>
-                <div className='w-1/2 p-8 text-white bg-brown-custom flex flex-col'>
+            <div className='w-full flex flex-col lg:flex-row justify-between gap-6'>
+                <div className='w-full lg:w-1/2 p-8 text-white bg-brown-custom flex flex-col'>
                     <h1 className='text-xl mb-4'>Sobre</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies nibh sit amet nisi tempor porta. Quisque id consectetur augue. Mauris laoreet sodales lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer augue lacus, commodo ut auctor vel, laoreet vitae massa. Aenean id leo ligula. Ut tincidunt orci id mi placerat, a congue magna sodales. Phasellus euismod sed lectus ut vestibulum.</p>
                 </div>
-                <form onSubmit={handleSubmit} className="w-1/2">
+                <form onSubmit={handleSubmit} className="w-full lg:w-1/2">
                     <div className="mb-4">
                         <label htmlFor="nome" className="block text-sm font-semibold text-white">Nome</label>
                         <input
@@ -70,7 +70,7 @@ const Contato: React.FC = () => {
                     </div>
                     <button
                         type="submit"
-                        className="bg-black hover:bg-white text-white hover:text-black font-semibold px-4 py-2"
+                        className="hover:bg-black bg-white hover:text-white text-black font-semibold px-4 py-2"
                     >
                         Enviar
                     </button>

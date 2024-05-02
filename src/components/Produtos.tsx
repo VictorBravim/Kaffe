@@ -5,7 +5,7 @@ import Image from 'next/image';
 import produtoA from '@/assets/cafe.png';
 
 const produtos = [
-    { id: 1, nome: 'Produto A', preco: 50, imagem: produtoA },
+    { id: 1, nome: 'Coffee', preco: 6, imagem: produtoA },
     { id: 2, nome: 'Produto B', preco: 70, imagem: produtoA },
     { id: 3, nome: 'Produto C', preco: 90, imagem: produtoA },
     { id: 4, nome: 'Produto D', preco: 120, imagem: produtoA },
@@ -17,7 +17,7 @@ const produtos = [
 
 const Produtos: React.FC = () => {
     return (
-        <div id='produtos' className="mx-12 py-6">
+        <div id='produtos' className="mx-8 lg:mx-12 py-6">
             <h2 className="text-white text-2xl font-bold mb-6">Produtos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {produtos.map((produto) => (

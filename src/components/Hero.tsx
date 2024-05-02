@@ -29,7 +29,7 @@ export default function Hero() {
     };
 
     return (
-        <div className="w-full px-12">
+        <div className="w-full px-8 lg:px-12">
             <Slider {...sliderSettings}>
                 <div className='shadow-lg'>
                     <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 1" />

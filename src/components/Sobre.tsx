@@ -2,7 +2,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import cafeImage from '@/assets/cafe.png';
+import coffee from '@/assets/coffee.png'
 
 interface CardData {
     titulo: string;
@@ -26,7 +26,7 @@ const Sobre: React.FC = () => {
     ];
 
     return (
-        <div id='sobre' className="mx-12 py-8">
+        <div id='sobre' className="mx-8 lg:mx-12 py-8">
             <h2 className="text-white  text-3xl font-bold mb-8">Sobre</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 shadow-lg">
                 {cardsData.map((card, index) => (
@@ -34,7 +34,7 @@ const Sobre: React.FC = () => {
                         <div className="p-4">
                             <h3 className="text-white text-xl font-semibold mb-2 flex items-center">
                                 <Image
-                                    src={cafeImage}
+                                    src={coffee}
                                     alt="Logo"
                                     width={40}
                                     height={40}
