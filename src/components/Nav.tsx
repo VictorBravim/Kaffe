@@ -37,7 +37,7 @@ export default function Nav() {
 
     return (
         <nav className="bg-transparent p-8 absolut w-full z-20">
-            <div className="mx-5 flex items-center justify-between">
+            <div className="mx-5 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
                 <div className="flex items-center">
                     <Image src={logo} alt="Texto" width={150} height={32} />
                 </div>
