@@ -18,7 +18,7 @@ const produtos = [
 const Produtos: React.FC = () => {
     return (
         <div id='produtos' className="mx-12 py-6">
-            <h2 className="text-white text-2xl font-bold mb-6">Produtos à Venda</h2>
+            <h2 className="text-white text-2xl font-bold mb-6">Produtos</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {produtos.map((produto) => (
                     <div key={produto.id} className="flex flex-col items-center bg-brown-custom shadow-lg overflow-hidden">
