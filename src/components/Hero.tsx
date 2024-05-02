@@ -29,15 +29,15 @@ export default function Hero() {
     };
 
     return (
-        <div className="w-full h-1/2 px-12">
+        <div className="w-full px-12">
             <Slider {...sliderSettings}>
-                <div>
+                <div className='shadow-lg'>
                     <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 1" />
                 </div>
-                <div>
+                <div className='shadow-lg'>
                     <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 2" />
                 </div>
-                <div>
+                <div className='shadow-lg'>
                     <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 3" />
                 </div>
             </Slider>
