@@ -46,7 +46,7 @@ O projeto é estruturado em componentes React, cada um responsável por renderiz
 
 1. Clonar o Repositório:
    ```
-   git clone https://github.com/seu-usuario/kaffe.git
+   git clone https://github.com/VictorBravim/Kaffe.git
    cd kaffe
    ```
 
