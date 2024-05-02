@@ -5,7 +5,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from "next/image";
-import cafe from '@/assets/cafe.png'
+import banner1 from '@/assets/banner1.png'
+import banner2 from '@/assets/banner2.png'
+import banner3 from '@/assets/banner3.png'
 
 export default function Hero() {
     const sliderSettings = {
@@ -32,13 +34,13 @@ export default function Hero() {
         <div className="w-full px-8 lg:px-12">
             <Slider {...sliderSettings}>
                 <div className='shadow-lg'>
-                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 1" />
+                    <Image src={banner1} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 1" />
                 </div>
                 <div className='shadow-lg'>
-                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 2" />
+                    <Image src={banner2} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 2" />
                 </div>
                 <div className='shadow-lg'>
-                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 3" />
+                    <Image src={banner3} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 3" />
                 </div>
             </Slider>
         </div>
