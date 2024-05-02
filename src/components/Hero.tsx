@@ -9,7 +9,7 @@ import cafe from '@/assets/cafe.png'
 
 export default function Hero() {
     const sliderSettings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
