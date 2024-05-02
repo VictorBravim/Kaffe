@@ -2,45 +2,50 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import imagem1 from '@/assets/cafe.png';
+import cafeImage from '@/assets/cafe.png';
+
+interface CardData {
+    titulo: string;
+    descricao: string;
+}
 
 const Sobre: React.FC = () => {
-    const cardsData = [
+    const cardsData: CardData[] = [
         {
-            titulo: 'Missão',
-            descricao: 'Nossa missão é fornecer produtos de alta qualidade para todos os clientes.',
-            imagem: imagem1,
+            titulo: 'Coffee',
+            descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies nibh sit amet nisi tempor porta. Quisque id consectetur augue. Mauris laoreet sodales lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer augue lacus, commodo ut auctor vel, laoreet vitae massa. Aenean id leo ligula. Ut tincidunt orci id mi placerat, a congue magna sodales. Phasellus euismod sed lectus ut vestibulum.',
         },
         {
-            titulo: 'Visão',
-            descricao: 'Nossa visão é ser a empresa líder no mercado em inovação e excelência.',
-            imagem: imagem1,
+            titulo: 'Cake',
+            descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies nibh sit amet nisi tempor porta. Quisque id consectetur augue. Mauris laoreet sodales lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer augue lacus, commodo ut auctor vel, laoreet vitae massa. Aenean id leo ligula. Ut tincidunt orci id mi placerat, a congue magna sodales. Phasellus euismod sed lectus ut vestibulum.',
         },
         {
-            titulo: 'Valores',
-            descricao: 'Nossos valores incluem integridade, compromisso e satisfação do cliente.',
-            imagem: imagem1,
+            titulo: 'Chocolate',
+            descricao: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies nibh sit amet nisi tempor porta. Quisque id consectetur augue. Mauris laoreet sodales lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer augue lacus, commodo ut auctor vel, laoreet vitae massa. Aenean id leo ligula. Ut tincidunt orci id mi placerat, a congue magna sodales. Phasellus euismod sed lectus ut vestibulum.',
         },
     ];
 
     return (
         <div className="mx-12 py-8">
-            <h2 className="text-white text-3xl font-bold text-left mb-8">Sobre Nós</h2>
+            <h2 className="text-white  text-3xl font-bold mb-8">Sobre Nós</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 shadow-lg">
                 {cardsData.map((card, index) => (
-                    <div key={index} className="bg-brown-custom overflow-hidden">
-                        <div className="relative h-40">
-                            <Image
-                                src={card.imagem}
-                                alt={card.titulo}
-                                layout="fill"
-                                objectFit="cover"
-                                className="rounded-t-lg"
-                            />
-                        </div>
+                    <div key={index} className="bg-brown-custom overflow-hidden flex">
                         <div className="p-4">
-                            <h3 className="text-white text-xl font-semibold mb-2">{card.titulo}</h3>
-                            <p className="text-white">{card.descricao}</p>
+                            <h3 className="text-white text-xl font-semibold mb-2 flex items-center">
+                                <Image
+                                    src={cafeImage}
+                                    alt="Logo"
+                                    width={40}
+                                    height={40}
+                                    className="mr-2"
+                                />
+                                {card.titulo}
+                            </h3>
+                            <p className="text-white mb-4">{card.descricao}</p>
+                            <button className="text-white hover:text-black border-b-2 border-white pb-2">
+                                Leia mais
+                            </button>
                         </div>
                     </div>
                 ))}
