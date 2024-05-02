@@ -1,6 +1,8 @@
 // Nav.tsx
 'use client'
 import { useState, useEffect } from 'react';
+import Image from "next/image";
+import logo from '@/assets/logo.png'
 
 export default function Nav() {
     const [activeSection, setActiveSection] = useState('home');
@@ -34,36 +36,33 @@ export default function Nav() {
     };
 
     return (
-        <nav className="bg-transparent p-8 fixed w-full z-20">
-            <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-                <div className="flex items-center ml-0 lg:ml-8"></div>
-                <div className="md:flex text-white space-x-6 lg:space-x-12 mt-4 md:mt-0">
+        <nav className="bg-transparent p-8 absolut w-full z-20">
+            <div className="w-full container mx-5 flex flex-row items-center justify-between">
+                <div className="flex items-center">
+                    <Image src={logo} alt="Texto" width={150} height={32} />
+                </div>
+                <div className="flex items-center text-white space-x-6 lg:space-x-12">
                     <button
-                        className={`text-base md:text-lg ${activeSection === 'home' ? 'bg-white text-black px-3 rounded-full' : ''}`}
-                        onClick={() => scrollToSection('home')}
-                    >
+                        className={`text-base md:text-lg ${activeSection === 'home' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
+                        onClick={() => scrollToSection('home')}>
                         Home
                     </button>
                     <button
-                        className={`text-base md:text-lg ${activeSection === 'sobre' ? 'bg-white text-black px-3 rounded-full' : ''}`}
-                        onClick={() => scrollToSection('sobre')}
-                    >
+                        className={`text-base md:text-lg ${activeSection === 'sobre' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
+                        onClick={() => scrollToSection('sobre')}>
                         Sobre
                     </button>
                     <button
-                        className={`text-base md:text-lg ${activeSection === 'locais' ? 'bg-white text-black px-3 rounded-full' : ''}`}
-                        onClick={() => scrollToSection('locais')}
-                    >
+                        className={`text-base md:text-lg ${activeSection === 'locais' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
+                        onClick={() => scrollToSection('locais')}>
                         Locais
                     </button>
                     <button
-                        className={`text-base md:text-lg ${activeSection === 'cambio' ? 'bg-white text-black px-3 rounded-full' : ''}`}
-                        onClick={() => scrollToSection('cambio')}
-                    >
+                        className={`text-base md:text-lg ${activeSection === 'cambio' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
+                        onClick={() => scrollToSection('cambio')}>
                         Câmbio
                     </button>
                 </div>
-                <button className="bg-none hidden text-white lg:block rounded-full text-base md:text-5xl font-bold px-4 mt-4 md:mt-0 mr-0 lg:mr-8"></button>
             </div>
         </nav>
     );
