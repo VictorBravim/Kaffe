@@ -19,16 +19,17 @@ const Produtos: React.FC = () => {
             <h2 className="text-2xl font-bold mb-6">Produtos à Venda</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {produtos.map((produto) => (
-                    <div key={produto.id} className="flex flex-col items-center justify-center bg-brown-custom shadow-lg overflow-hidden">
-                        <div className="relative w-48 h-48">
+                    <div key={produto.id} className="flex flex-col items-center bg-brown-custom shadow-lg overflow-hidden">
+                        <div className="relative w-48 h-48 p-8">
                             <Image
                                 src={produto.imagem}
                                 alt={produto.nome}
                                 layout="fill"
                                 objectFit="cover"
+                                className='my-8'
                             />
                         </div>
-                        <div className="flex flex-row justify-between p-8">
+                        <div className="w-full flex flex-row justify-between p-8 mt-8">
                             <div>
                                 <h3 className="text-lg font-semibold mb-2">{produto.nome}</h3>
                                 <p className="text-gray-600">${produto.preco}</p>
