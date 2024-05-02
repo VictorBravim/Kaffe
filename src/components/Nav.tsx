@@ -37,30 +37,30 @@ export default function Nav() {
 
     return (
         <nav className="bg-transparent p-8 absolut w-full z-20">
-            <div className="w-full container mx-5 flex flex-row items-center justify-between">
+            <div className="mx-5 flex items-center justify-between">
                 <div className="flex items-center">
                     <Image src={logo} alt="Texto" width={150} height={32} />
                 </div>
                 <div className="flex items-center text-white space-x-6 lg:space-x-12">
                     <button
-                        className={`text-base md:text-lg ${activeSection === 'home' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
+                        className={`text-base md:text-lg ${activeSection === 'home' ? 'bg-transparent text-white py-2 border-b-2 border-white' : ''}`}
                         onClick={() => scrollToSection('home')}>
-                        Home
+                        HOME
                     </button>
                     <button
-                        className={`text-base md:text-lg ${activeSection === 'sobre' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
+                        className={`text-base md:text-lg ${activeSection === 'produtos' ? 'bg-transparent text-white py-2 border-b-2 border-white' : ''}`}
+                        onClick={() => scrollToSection('produtos')}>
+                        PRODUTOS
+                    </button>
+                    <button
+                        className={`text-base md:text-lg ${activeSection === 'sobre' ? 'bg-transparent text-white py-2 border-b-2 border-white' : ''}`}
                         onClick={() => scrollToSection('sobre')}>
-                        Sobre
+                        SOBRE
                     </button>
                     <button
-                        className={`text-base md:text-lg ${activeSection === 'locais' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
-                        onClick={() => scrollToSection('locais')}>
-                        Locais
-                    </button>
-                    <button
-                        className={`text-base md:text-lg ${activeSection === 'cambio' ? 'bg-transparent text-white py-2 border-t-2 border-white' : ''}`}
-                        onClick={() => scrollToSection('cambio')}>
-                        Câmbio
+                        className={`text-base md:text-lg ${activeSection === 'contato' ? 'bg-transparent text-white py-2 border-b-2 border-white' : ''}`}
+                        onClick={() => scrollToSection('contato')}>
+                        CONTATO
                     </button>
                 </div>
             </div>

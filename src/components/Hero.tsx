@@ -32,13 +32,13 @@ export default function Hero() {
         <div className="w-full h-1/2 px-12">
             <Slider {...sliderSettings}>
                 <div>
-                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover" alt="Slide 1" />
+                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 1" />
                 </div>
                 <div>
-                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover" alt="Slide 2" />
+                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 2" />
                 </div>
                 <div>
-                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover" alt="Slide 3" />
+                    <Image src={cafe} className="bg-white w-full h-1/2 object-cover pointer-events-none" alt="Slide 3" />
                 </div>
             </Slider>
         </div>
