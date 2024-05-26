@@ -1,6 +1,7 @@
 # ☕ Kaffe
 
-![737shots_so](https://github.com/VictorBravim/Kaffe/assets/122113588/cfccfa75-d647-4138-91e7-5a9bcc0468e3)
+![image 6](https://github.com/VictorBravim/Kaffe/assets/122113588/5bebf963-591f-49f9-b7c1-4bb30b91622b)
+
 
 ## 🚀 Overview
 
